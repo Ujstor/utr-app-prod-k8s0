@@ -1,0 +1,27 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: system-postgres-operator-k3s1
+  namespace: gitops
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
+  annotations:
+    argocd.argoproj.io/sync-wave: "6"
+spec:
+  destination:
+    namespace: postgres-operator
+    server: https://api.k3s1.ujstor.com:6443
+  project: ops-cluster-bootstrap
+  source:
+    path: gitops/helmsystem/postgres-operator
+    repoURL: https://gitlab.k3s0.ujstor.com/clusters/customer-ujstor/apps-k3s1.git
+    targetRevision: master
+    helm:
+      version: v3
+      releaseName: postgres-operator
+  syncPolicy:
+    automated:
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
+      - ServerSideApply=true

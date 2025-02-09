@@ -1,0 +1,34 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: app-plausible-analytics-k3s1
+  namespace: gitops
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
+  annotations:
+    argocd.argoproj.io/sync-wave: "14"
+    "argocd.argoproj.io/hook": "PreSync"
+    "argocd.argoproj.io/sync-options": "SkipDryRunOnMissingResource=true"
+spec:
+  destination:
+    namespace: plausible-analytics
+    server: https://api.k3s1.ujstor.com:6443
+  project: ops-cluster-bootstrap
+  source:
+    path: gitops/helm/apps/plausible-analytics
+    repoURL: https://gitlab.k3s0.ujstor.com/clusters/customer-ujstor/apps-k3s1.git
+    targetRevision: master
+    helm:
+      version: v3
+      releaseName: plausible-analytics
+  ignoreDifferences:
+  - group: ""
+    kind: Secret
+    name: plausible-analytics
+    jsonPointers:
+    - /data
+  syncPolicy:
+    automated:
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true

@@ -1,0 +1,24 @@
+wp-ds:
+  wordpress:
+    wordpressUsername: tena
+    wordpressEmail: tena.tomasevic@gmail.com
+    wordpressFirstName: Tena
+    wordpressLastName: Tomasevic
+    wordpressBlogName: Dancing Spoon
+    wordpressScheme: https
+
+    ingress:
+      enabled: true
+      pathType: Prefix
+      ingressClassName: "nginx"
+      hostname: dancingspoon.net
+      path: /
+      annotations:
+        cert-manager.io/cluster-issuer: "letsencrypt"
+        nginx.ingress.kubernetes.io/backend-protocol: "HTTP"
+        nginx.ingress.kubernetes.io/force-ssl-redirect: "true"
+        nginx.ingress.kubernetes.io/ssl-redirect: "true"
+      tls: true
+
+    persistence:
+      size: 5Gi

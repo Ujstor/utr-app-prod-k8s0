@@ -1,0 +1,11 @@
+probit-api:
+  ingress:
+    hosts:
+      - host: probit.astipan.com
+        paths:
+          - path: /
+            pathType: Prefix
+    tls:
+     - secretName: probit-api-prod-tls
+       hosts:
+         - probit.astipan.com

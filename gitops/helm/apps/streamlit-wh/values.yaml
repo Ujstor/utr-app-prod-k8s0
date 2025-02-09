@@ -1,0 +1,11 @@
+streamlit-wh:
+  ingress:
+    hosts:
+      - host: working-hours.astipan.com
+        paths:
+          - path: /
+            pathType: Prefix
+    tls:
+     - secretName: streamlit-wh-prod-tls
+       hosts:
+         - working-hours.astipan.com
