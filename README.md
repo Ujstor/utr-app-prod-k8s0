@@ -18,12 +18,12 @@ The main idea is to have a primary single-node operations K3s cluster that has A
 
 Helm charts and Terraform modules are custom-made with the intention to be reusable and reconfigurable:
 
-- [Helm Charts System](https://github.com/Ujstor/helm-charts-system)
-- [Helm Charts Apps](https://github.com/Ujstor/helm-charts-apps)
-- [Helm Charts Github Apps](https://github.com/Ujstor/helm-charts-github-apps)
-- [Terraform Hetzner Modules](https://github.com/Ujstor/terraform-hetzner-modules)
+- [Helm Charts System](https://gitlab.k3s0.ujstor.com/devops/helm/system)
+- [Helm Charts Apps](https://gitlab.k3s0.ujstor.com/devops/helm/apps)
+- [Helm Charts Github Apps](https://gitlab.k3s0.ujstor.com/devops/helm/github-apps)
+- [Terraform Hetzner Modules](https://gitlab.k3s0.ujstor.com/devops/terraform/terraform-hetzner-modules)
 
-## TF module in provate repo
+## TF module in private repo
 
 ```bash
 ~/.terraformrc
