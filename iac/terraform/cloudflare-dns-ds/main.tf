@@ -1,5 +1,5 @@
 module "cloudflare_record" {
-  source = "github.com/Ujstor/terraform-hetzner-modules//modules/network/cloudflare_record?ref=v0.0.6"
+  source = "git::https://gitlab.k3s0.ujstor.com/devops/terraform/terraform-hetzner-modules//modules/network/cloudflare_record?ref=v0.0.8"
 
   cloudflare_record = {
     wordpress-blog = {

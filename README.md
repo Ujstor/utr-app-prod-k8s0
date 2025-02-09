@@ -22,3 +22,13 @@ Helm charts and Terraform modules are custom-made with the intention to be reusa
 - [Helm Charts Apps](https://github.com/Ujstor/helm-charts-apps)
 - [Helm Charts Github Apps](https://github.com/Ujstor/helm-charts-github-apps)
 - [Terraform Hetzner Modules](https://github.com/Ujstor/terraform-hetzner-modules)
+
+## TF module in provate repo
+
+```bash
+~/.terraformrc
+
+credentials "gitlab.k3s0.ujstor.com" {
+  token = "gitlab_token"
+}
+```
