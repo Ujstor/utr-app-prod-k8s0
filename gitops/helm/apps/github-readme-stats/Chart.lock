@@ -1,6 +1,6 @@
 dependencies:
 - name: github-readme-stats
-  repository: https://ujstor.github.io/helm-charts-github-apps
+  repository: oci://harbor.k3s0.ujstor.com/helm
   version: 1.0.0
-digest: sha256:c7389f10c72003df09fd152f8384ce5055e97682206cd8e5471a228661266d05
-generated: "2024-12-14T05:19:38.563735882+01:00"
+digest: sha256:83e8ef91de0bd59f81db967fcc05cc8f8df17cd721612b3ea1ce14ef9578e59a
+generated: "2025-02-09T01:26:07.945009813+01:00"

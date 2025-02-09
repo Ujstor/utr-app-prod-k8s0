@@ -1,6 +1,6 @@
 dependencies:
 - name: wordpress
-  repository: https://ujstor.github.io/helm-charts-apps
+  repository: oci://harbor.k3s0.ujstor.com/helm
   version: 1.0.0
-digest: sha256:bb20afee1075778c1dbfce4f31f8747c10447de3825dfe49636c40c59c1d2da4
-generated: "2024-11-28T23:05:41.384801417+01:00"
+digest: sha256:00145e8c037e08758d46e834a9fafabac4f0ff4de2c8cd5ddafdaea51aa7ffc0
+generated: "2025-02-09T01:26:07.976632726+01:00"

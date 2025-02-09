@@ -1,9 +1,9 @@
 dependencies:
 - name: prometheus-grafana
-  repository: https://ujstor.github.io/helm-charts-system
+  repository: oci://harbor.k3s0.ujstor.com/helm
   version: 1.0.0
 - name: secret-store
-  repository: https://ujstor.github.io/helm-charts-system
+  repository: oci://harbor.k3s0.ujstor.com/helm
   version: 1.0.0
-digest: sha256:08ff520beb187ebfdcb7bbb6ebaafae64492d6f27dd75223804df60177b0ac11
-generated: "2024-12-18T00:30:32.110563185+01:00"
+digest: sha256:556a40217e2a32cb59aff7762817a29cb77f8970fde2892fd5a935a0b66d38b7
+generated: "2025-02-09T01:26:08.007607706+01:00"

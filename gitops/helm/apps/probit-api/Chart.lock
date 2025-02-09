@@ -1,6 +1,6 @@
 dependencies:
 - name: probit-api
-  repository: https://ujstor.github.io/helm-charts-github-apps
+  repository: oci://harbor.k3s0.ujstor.com/helm
   version: 1.0.0
-digest: sha256:e4771920ea302f4c241362fc3e3b2baa3a4eb34433105ad8ce24808e28151cf2
-generated: "2024-12-14T03:10:05.261015287+01:00"
+digest: sha256:e79ead688e21412defcc19d9fa394f391fd94bb8331e2fc1bec0f411e654c39c
+generated: "2025-02-09T01:26:07.942310676+01:00"

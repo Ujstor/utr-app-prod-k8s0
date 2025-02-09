@@ -1,6 +1,6 @@
 dependencies:
 - name: streamlit-wh
-  repository: https://ujstor.github.io/helm-charts-github-apps
+  repository: oci://harbor.k3s0.ujstor.com/helm
   version: 1.0.0
-digest: sha256:f3006d3f9949ba9871b752de3f18fa14b9615745a029fe53cfae51f6530d2091
-generated: "2024-11-22T00:03:11.507592362+01:00"
+digest: sha256:776a6f1f0c2af6ca42bc7a2a2b806291c89b1cf2fab561cac0ada0f596fbce2b
+generated: "2025-02-09T01:26:07.939539458+01:00"

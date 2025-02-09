@@ -1,6 +1,6 @@
 dependencies:
 - name: metallb-config
-  repository: https://ujstor.github.io/helm-charts-system
+  repository: oci://harbor.k3s0.ujstor.com/helm
   version: 1.0.0
-digest: sha256:2f38ef33192c9fccd31e4a5abc6e0b652431fe2cd71c8ea155587add8eda43df
-generated: "2024-12-07T21:35:22.725327235+01:00"
+digest: sha256:acc5b3d5f3a03e9e723d98c58cbfaf8b7e860aea3226b37a41daab5212b46d9e
+generated: "2025-02-09T01:26:07.942839745+01:00"

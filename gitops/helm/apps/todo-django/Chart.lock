@@ -1,6 +1,6 @@
 dependencies:
 - name: todo-django
-  repository: https://ujstor.github.io/helm-charts-github-apps
+  repository: oci://harbor.k3s0.ujstor.com/helm
   version: 1.0.0
-digest: sha256:9c119bdaae74c8dede83c9d2f2ec69a1b3321616efc7b7fe4ff70b33e433a539
-generated: "2024-12-14T15:50:11.722301777+01:00"
+digest: sha256:8e2ab9fd83daf64e94af6d7e1ab4ef43d7cfb126f1342dccb87c233a3afa2c19
+generated: "2025-02-09T01:26:07.947148451+01:00"

@@ -1,6 +1,6 @@
 dependencies:
 - name: cluster-issuer
-  repository: https://ujstor.github.io/helm-charts-system
+  repository: oci://harbor.k3s0.ujstor.com/helm
   version: 1.0.0
-digest: sha256:a85f401d15e65a96989b035da32cd2023445d3d67e92614bd10297d29a52f59e
-generated: "2024-11-16T02:25:26.867293738+01:00"
+digest: sha256:73e495083634a19cedd2e7b74118a1a093b5938a3a34c3e6ad367470c29b4836
+generated: "2025-02-09T01:26:07.949042784+01:00"

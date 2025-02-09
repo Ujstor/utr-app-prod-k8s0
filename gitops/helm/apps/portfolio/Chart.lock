@@ -1,6 +1,6 @@
 dependencies:
 - name: portfolio
-  repository: https://ujstor.github.io/helm-charts-github-apps
+  repository: oci://harbor.k3s0.ujstor.com/helm
   version: 1.0.0
-digest: sha256:92307887b7e2737460aa3b06c0112420fada8922d262a0444ef8b093b3cdcd87
-generated: "2024-11-21T01:25:49.979729009+01:00"
+digest: sha256:1d9173dbbb3d6964eeb7f14a94a6349ee5a799ee6bd1feaea3e2603b832ea76c
+generated: "2025-02-09T01:26:07.945010923+01:00"
