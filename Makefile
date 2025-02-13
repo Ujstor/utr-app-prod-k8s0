@@ -12,7 +12,7 @@ CHART_DIR_APPS_K3S1 := gitops/helm/apps
 
 # k3s1-app cluster packages
 CHART_SYSTEM_K3S1 := cert-manager cilium ingress-nginx cluster-issuer external-secrets postgres-operator minio-operator metallb-operator metallb-config prometheus-grafana
-CHART_APPS_K3S1 := portfolio streamlit-wh todo-go-htmx notes-flask plausible-analytics wordpress-ds probit-api github-readme-stats todo-django fastapi
+CHART_APPS_K3S1 := portfolio streamlit-wh todo-go-htmx notes-flask plausible-analytics wordpress-ds probit-api github-readme-stats todo-django fastapi s3-harbor-backup
 
 # Define pattern rules for k3s1
 build_system_k3s1: $(addprefix k3s1-system-,$(CHART_SYSTEM_K3S1))
