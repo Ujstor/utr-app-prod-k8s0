@@ -1,6 +1,6 @@
 dependencies:
 - name: minio-operator
   repository: oci://harbor.k3s0.ujstor.com/helm
-  version: 1.0.0
-digest: sha256:99865f7e3e8a6c2ef16246ad3dfedcd197529f6f0c30b40e96e6a7e6d22af3c1
-generated: "2025-02-09T01:26:07.944867951+01:00"
+  version: 2.0.0
+digest: sha256:6b410c539411bb8af512445ada6f2132219491d20e08b40d6c6ae1e23caefda5
+generated: "2025-02-14T00:08:35.405663734+01:00"

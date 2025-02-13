@@ -1,6 +1,6 @@
 dependencies:
 - name: minio-tenant
   repository: oci://harbor.k3s0.ujstor.com/helm
-  version: 1.1.0
-digest: sha256:07f1d09948ae6cf2f81d354aef64e6f4b4c1b84aae46a75432bf619f0acd85ce
-generated: "2025-02-09T01:29:32.185795096+01:00"
+  version: 2.0.0
+digest: sha256:1c5f214efbfd08469ae4dcc5904118849801d4b170734156cd34db32cea2e69e
+generated: "2025-02-14T00:09:58.816929052+01:00"
