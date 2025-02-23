@@ -36,3 +36,21 @@ wp-ds:
       limits:
         cpu: 1000m
         memory: 1Gi
+
+    mariadb:
+      enabled: true
+      primary:
+        persistence:
+          enabled: true
+          storageClass: ""
+          accessModes:
+            - ReadWriteOnce
+          size: 2Gi
+        resourcesPreset: "small"
+        resources:
+          requests:
+            cpu: 500m
+            memory: 512Mi
+          limits:
+            cpu: 1000m
+            memory: 1Gi
