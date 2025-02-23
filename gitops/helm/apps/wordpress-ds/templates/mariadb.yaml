@@ -6,8 +6,8 @@ metadata:
   namespace: {{ .Release.Namespace }}
 spec:
   rootPasswordSecretKeyRef:
-    name: mariadb-root-secret
-    key: password
+    name: wordpress-db-secret
+    key: mariadb-password
   image:
     repository: mariadb
     tag: "11.7.2"
@@ -74,5 +74,5 @@ kind: Secret
 metadata:
   name: wordpress-db-secret
   namespace: {{ .Release.Namespace }}
-data:
-  password: d29yZHByZXNzCg==
+stringData:
+  mariadb-password: "wordpress"
