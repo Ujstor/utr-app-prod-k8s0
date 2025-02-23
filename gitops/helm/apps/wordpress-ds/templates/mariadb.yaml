@@ -8,10 +8,7 @@ spec:
   rootPasswordSecretKeyRef:
     name: wordpress-db-secret
     key: mariadb-password
-  image:
-    repository: mariadb
-    tag: "11.7"
-    pullPolicy: IfNotPresent
+  image: docker-registry1.mariadb.com/library/mariadb:11.7
   port: 3306
   volumeClaimTemplate:
     resources:
