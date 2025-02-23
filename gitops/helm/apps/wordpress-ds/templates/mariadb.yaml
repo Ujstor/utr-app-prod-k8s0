@@ -1,0 +1,83 @@
+---
+apiVersion: k8s.mariadb.com/v1alpha1
+kind: MariaDB
+metadata:
+  name: wordpress-db
+  namespace: {{ .Release.Namespace }}
+spec:
+  rootPasswordSecretKeyRef:
+    name: wordpress-db-root
+    key: password
+  image:
+    repository: mariadb
+    tag: "11.0.3"
+    pullPolicy: IfNotPresent
+  port: 3306
+  volumeClaimTemplate:
+    resources:
+      requests:
+        storage: 5Gi
+    accessModes:
+      - ReadWriteOnce
+  service:
+    type: ClusterIP
+---
+apiVersion: k8s.mariadb.com/v1alpha1
+kind: Database
+metadata:
+  name: bitnami-wordpress
+  namespace: {{ .Release.Namespace }}
+spec:
+  mariaDbRef:
+    name: wordpress-db
+    namespace: {{ .Release.Namespace }}
+  characterSet: utf8mb4
+  collate: utf8mb4_unicode_ci
+---
+apiVersion: k8s.mariadb.com/v1alpha1
+kind: User
+metadata:
+  name: bn-wordpress
+  namespace: {{ .Release.Namespace }}
+spec:
+  mariaDbRef:
+    name: wordpress-db
+    namespace: {{ .Release.Namespace }}
+  name: bn_wordpress
+  passwordSecretKeyRef:
+    name: wordpress-db-user
+    key: password
+  maxUserConnections: 20
+---
+apiVersion: k8s.mariadb.com/v1alpha1
+kind: Grant
+metadata:
+  name: wordpress-db-access
+  namespace: {{ .Release.Namespace }}
+spec:
+  mariaDbRef:
+    name: wordpress-db
+    namespace: {{ .Release.Namespace }}
+  privileges:
+    - "ALL PRIVILEGES"
+  database: "bitnami_wordpress"
+  table: "*"
+  username: bn_wordpress
+---
+apiVersion: v1
+kind: Secret
+metadata:
+  name: wordpress-db-root
+  namespace: {{ .Release.Namespace }}
+type: Opaque
+data:
+  password: d29yZHByZXNzCg==
+---
+apiVersion: v1
+kind: Secret
+metadata:
+  name: wordpress-db-user
+  namespace: {{ .Release.Namespace }}
+type: Opaque
+data:
+  password: d29yZHByZXNzCg==

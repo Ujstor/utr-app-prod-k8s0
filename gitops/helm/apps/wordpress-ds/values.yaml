@@ -38,24 +38,10 @@ wp-ds:
         memory: 2Gi
 
     mariadb:
-      enabled: true
-      auth:
-        rootPassword: "wordpress"
-        database: bitnami_wordpress
-        username: bn_wordpress
-        password: "wordpress"
-      primary:
-        persistence:
-          enabled: true
-          storageClass: ""
-          accessModes:
-            - ReadWriteOnce
-          size: 2Gi
-        resourcesPreset: "small"
-        resources:
-          requests:
-            cpu: 500m
-            memory: 512Mi
-          limits:
-            cpu: 2000m
-            memory: 2Gi
+      enabled: false
+    externalDatabase:
+      host: wordpress-db.wordpress.svc.cluster.local
+      port: 3306
+      user: bn_wordpress
+      database: bitnami_wordpress
+      existingSecret: wordpress-db-user

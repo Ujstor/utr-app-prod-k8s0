@@ -1,0 +1,13 @@
+apiVersion: v2
+name: mariadb-operator
+description: MariaDB Operator Helm chart
+type: application
+version: 1.0.0
+appVersion: "0.37.1"
+
+dependencies:
+- name: mariadb-operator
+  version: 1.0.0
+  repository: "oci://harbor.k3s0.ujstor.com/helm"
+
+
