@@ -18,7 +18,7 @@ spec:
     targetRevision: main
     helm:
       version: v3
-      releaseName: minio-operator-crds
+      releaseName: mariadb-operator-crds
   syncPolicy:
     automated:
       selfHeal: true
