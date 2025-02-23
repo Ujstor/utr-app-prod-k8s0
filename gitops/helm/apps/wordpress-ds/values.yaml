@@ -39,6 +39,11 @@ wp-ds:
 
     mariadb:
       enabled: true
+      auth:
+        rootPassword: "wordpress"
+        database: bitnami_wordpress
+        username: bn_wordpress
+        password: "wordpress"
       primary:
         persistence:
           enabled: true
