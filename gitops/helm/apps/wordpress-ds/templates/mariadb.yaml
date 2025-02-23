@@ -10,7 +10,7 @@ spec:
     key: mariadb-password
   image:
     repository: mariadb
-    tag: "11.7.2"
+    tag: "11.7"
     pullPolicy: IfNotPresent
   port: 3306
   volumeClaimTemplate:
@@ -45,7 +45,7 @@ spec:
     namespace: {{ .Release.Namespace }}
   passwordSecretKeyRef:
     name: wordpress-db-secret
-    key: password
+    key: mariadb-password
 ---
 apiVersion: k8s.mariadb.com/v1alpha1
 kind: Grant
