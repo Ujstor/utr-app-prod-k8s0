@@ -10,12 +10,8 @@ spec:
     key: mariadb-password
   image: docker-registry1.mariadb.com/library/mariadb:11.7
   port: 3306
-  volumeClaimTemplate:
-    resources:
-      requests:
-        storage: 5Gi
-    accessModes:
-      - ReadWriteOnce
+  storage:
+    size: 5Gi
   service:
     type: ClusterIP
 ---
