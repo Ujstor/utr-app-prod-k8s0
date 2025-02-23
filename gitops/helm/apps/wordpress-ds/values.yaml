@@ -42,6 +42,6 @@ wp-ds:
     externalDatabase:
       host: wordpress-db.wordpress.svc.cluster.local
       port: 3306
-      user: bn_wordpress
-      database: bitnami_wordpress
-      existingSecret: wordpress-db-user
+      user: wordpress-user
+      database: wordpress-db
+      existingSecret: wordpress-db-secret
