@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: app-todo-django-k3s1
+  name: app-todo-django-utr-app-prod-k8s0
   namespace: gitops
   annotations:
     argocd.argoproj.io/sync-wave: "16"
