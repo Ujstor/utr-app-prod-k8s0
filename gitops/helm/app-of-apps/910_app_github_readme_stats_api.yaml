@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: app-github-readme-stats-k3s1
+  name: app-github-readme-stats-utr-app-prod-k8s0
   namespace: gitops
   annotations:
     argocd.argoproj.io/sync-wave: "10"

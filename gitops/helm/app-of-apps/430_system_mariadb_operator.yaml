@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: system-mariadb-operator-k3s1
+  name: system-mariadb-operator-utr-app-prod-k8s0
   namespace: gitops
   annotations:
     argocd.argoproj.io/sync-wave: "9"
