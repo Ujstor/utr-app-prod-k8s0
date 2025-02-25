@@ -3,8 +3,6 @@ kind: Application
 metadata:
   name: app-plausible-analytics-k3s1
   namespace: gitops
-  finalizers:
-    - resources-finalizer.argocd.argoproj.io
   annotations:
     argocd.argoproj.io/sync-wave: "17"
     "argocd.argoproj.io/sync-options": "SkipDryRunOnMissingResource=true"

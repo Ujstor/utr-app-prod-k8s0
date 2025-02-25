@@ -3,8 +3,6 @@ kind: Application
 metadata:
   name: app-s3-storage-k3s1
   namespace: gitops
-  finalizers:
-    - resources-finalizer.argocd.argoproj.io
   annotations:
    argocd.argoproj.io/sync-wave: "19"
 spec:

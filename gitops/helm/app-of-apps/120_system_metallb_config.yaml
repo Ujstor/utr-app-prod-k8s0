@@ -3,8 +3,6 @@ kind: Application
 metadata:
   name: system-metallb-config-k3s1
   namespace: gitops
-  finalizers:
-    - resources-finalizer.argocd.argoproj.io
   annotations:
     argocd.argoproj.io/sync-wave: "3"
     argocd.argoproj.io/hook-dependency: system-metallb-operator

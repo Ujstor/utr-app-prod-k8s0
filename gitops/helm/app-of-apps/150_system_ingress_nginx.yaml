@@ -3,8 +3,6 @@ kind: Application
 metadata:
   name: system-ingress-nginx-k3s1
   namespace: gitops
-  finalizers:
-    - resources-finalizer.argocd.argoproj.io
   annotations:
     argocd.argoproj.io/sync-wave: "4"
     argocd.argoproj.io/hook-dependency: system-cilium
