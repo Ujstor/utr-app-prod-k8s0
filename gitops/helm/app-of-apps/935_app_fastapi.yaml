@@ -3,8 +3,6 @@ kind: Application
 metadata:
   name: app-fastapi-k3s1
   namespace: gitops
-  finalizers:
-    - resources-finalizer.argocd.argoproj.io
   annotations:
     argocd.argoproj.io/sync-wave: "14"
 spec:
