@@ -1,6 +1,6 @@
 dependencies:
-- name: ingress-nginx
+- name: kyverno
   repository: oci://harbor.k3s0.ujstor.com/helm
   version: 1.0.0
-digest: sha256:67be88a6de8a1ef119de67aedfc2874eaf5a5f5a8cc5733ba1ba0c7f8e98a7d6
-generated: "2025-03-03T22:54:43.17444877+01:00"
+digest: sha256:e2b631afe6011a0704cf00b6bf237c7bdae4b567cca66ee3be176c4fd260ddde
+generated: "2025-03-03T23:30:55.976895347+01:00"
