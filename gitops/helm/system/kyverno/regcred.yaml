@@ -1,0 +1,44 @@
+apiVersion: kyverno.io/v1
+kind: ClusterPolicy
+metadata:
+  name: sync-secrets
+  annotations:
+    policies.kyverno.io/title: Sync Secrets
+    policies.kyverno.io/category: Sample
+    policies.kyverno.io/subject: Secret
+    policies.kyverno.io/minversion: 1.13.2
+    policies.kyverno.io/description: >-
+      Secrets like registry credentials often need to exist in multiple
+      Namespaces so Pods there have access. This policy copies the
+      Secret called regcred from the kyverno-global-config Namespace to
+      all other namespaces and keeps them in sync.
+spec:
+  background: true
+  validationFailureAction: Audit
+  rules:
+  - name: sync-image-pull-secret
+    match:
+      any:
+      - resources:
+          kinds:
+          - Namespace
+    exclude:
+      any:
+      - resources:
+          namespaces:
+          - kyverno-global-config
+          - kube-system
+          - kube-public
+          - kube-node-lease
+          - kyverno
+    generate:
+      apiVersion: v1
+      kind: Secret
+      name: regcred
+      namespace: "{{request.object.metadata.name}}"
+      generateExisting: true
+      synchronize: true
+      clone:
+        namespace: kyverno-global-config
+        name: regcred
+    skipBackgroundRequests: false

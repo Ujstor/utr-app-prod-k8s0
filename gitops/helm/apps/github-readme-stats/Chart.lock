@@ -1,6 +1,6 @@
 dependencies:
 - name: github-readme-stats
   repository: oci://harbor.k3s0.ujstor.com/helm
-  version: 1.1.0
-digest: sha256:eea1c54b258ff3953555c8d9c399d694029608cd862ecb5509e7eeea8a54f260
-generated: "2025-03-19T02:55:40.752259454+01:00"
+  version: 1.1.1
+digest: sha256:8cc0dcb574137850fe07154e8036158fe5e5a28438def0c0bd52e821b6a55462
+generated: "2025-03-19T04:26:07.169976733+01:00"

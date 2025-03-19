@@ -1,6 +1,6 @@
 dependencies:
 - name: todo-django
   repository: oci://harbor.k3s0.ujstor.com/helm
-  version: 1.1.0
-digest: sha256:813d3b74268894815a55a21389fe23d47615b69c4d606bc54af31c745008377b
-generated: "2025-03-19T02:55:40.775779798+01:00"
+  version: 1.1.1
+digest: sha256:7f6c76b57569d91590db8e3e2905841a02e659f1feb0747afad4977d84b6c4bb
+generated: "2025-03-19T04:26:07.091256576+01:00"
