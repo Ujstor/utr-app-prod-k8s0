@@ -5,7 +5,3 @@ todo-django:
         paths:
           - path: /
             pathType: Prefix
-    tls:
-     - secretName: django-todo-prod-tls
-       hosts:
-         - django-todo.astipan.com

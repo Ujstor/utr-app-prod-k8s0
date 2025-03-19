@@ -4,8 +4,8 @@ plausible:
 
   customIngress:
     enabled: true
+    className: "nginx-utr"
     annotations:
-      cert-manager.io/cluster-issuer: "letsencrypt"
       nginx.ingress.kubernetes.io/backend-protocol: "HTTP"
       nginx.ingress.kubernetes.io/proxy-read-timeout: "3600"
       nginx.ingress.kubernetes.io/proxy-send-timeout: "3600"
@@ -30,7 +30,3 @@ plausible:
         paths:
           - path: /
             pathType: Prefix
-    tls:
-      - secretName: plausible-analytics-prod-tls
-        hosts:
-          - analytics.ujstor.com

@@ -1,6 +1,6 @@
 dependencies:
 - name: probit-api
   repository: oci://harbor.k3s0.ujstor.com/helm
-  version: 1.0.0
-digest: sha256:e79ead688e21412defcc19d9fa394f391fd94bb8331e2fc1bec0f411e654c39c
-generated: "2025-02-09T01:26:07.942310676+01:00"
+  version: 1.1.0
+digest: sha256:c77b6ee2ce7054bae64b2b23791284cb02ac2be51cf00edf77f8c43972bf84e4
+generated: "2025-03-19T02:55:40.761856154+01:00"

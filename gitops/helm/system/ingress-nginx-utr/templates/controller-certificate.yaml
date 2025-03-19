@@ -1,0 +1,22 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: nginx-controler-utr-wildcard-cert
+  namespace: ingress-nginx-utr
+spec:
+  secretName: letsencrypt-secret-prod
+  issuerRef:
+    name: letsencrypt-nginx-controller-utr-issuer
+    kind: Issuer
+  commonName: "ujstor.com"
+  dnsNames:
+  - "*.ujstor.com"
+  - "*.k3s1.ujstor.com"
+  - "*.console.k3s1.ujstor.com"
+  - "*.harbor.console.k3s1.ujstor.com"
+  - "*.harbor.k3s1.ujstor.com"
+  duration: 2160h # 90 days
+  renewBefore: 360h # 15 days
+  privateKey:
+    algorithm: RSA
+    size: 2048

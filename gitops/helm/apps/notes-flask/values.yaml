@@ -5,7 +5,3 @@ notes-flask:
         paths:
           - path: /
             pathType: Prefix
-    tls:
-     - secretName: notes-flask-prod-tls
-       hosts:
-         - notes-flask.astipan.com

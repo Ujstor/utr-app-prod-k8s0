@@ -1,6 +1,6 @@
 dependencies:
 - name: metallb-operator
   repository: oci://harbor.k3s0.ujstor.com/helm
-  version: 1.0.0
-digest: sha256:654e0a884b68e1b44d79fd14a453fc432039e68c650d8976d607a702c5b68482
-generated: "2025-02-09T01:26:07.943331094+01:00"
+  version: 1.0.1
+digest: sha256:3a65a3bc022ff1e2575955b8cb1afb2eeedd07f9dd5b654282d76025fb75b6a7
+generated: "2025-03-19T01:13:59.815178453+01:00"

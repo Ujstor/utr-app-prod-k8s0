@@ -1,6 +1,6 @@
 dependencies:
 - name: streamlit-wh
   repository: oci://harbor.k3s0.ujstor.com/helm
-  version: 1.0.0
-digest: sha256:776a6f1f0c2af6ca42bc7a2a2b806291c89b1cf2fab561cac0ada0f596fbce2b
-generated: "2025-02-09T01:26:07.939539458+01:00"
+  version: 1.1.0
+digest: sha256:551ce965230cde0fecbd8bd9d5bdeba273eb1da6b0289c89d129d68329f97c47
+generated: "2025-03-19T02:55:40.682417954+01:00"

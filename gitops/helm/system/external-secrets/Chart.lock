@@ -1,6 +1,6 @@
 dependencies:
 - name: external-secrets
   repository: oci://harbor.k3s0.ujstor.com/helm
-  version: 1.0.0
-digest: sha256:9c959666b278287f1c7909f6186ca4d25ff0057884bac586e84ce0bf2787976d
-generated: "2025-02-09T01:26:07.950246225+01:00"
+  version: 1.1.1
+digest: sha256:80e12af7f195d54cc5cb8b136324c1e9a2937ad62adc4b5758f948fd20386eaf
+generated: "2025-03-19T01:13:59.837986506+01:00"

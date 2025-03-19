@@ -1,6 +1,6 @@
 dependencies:
 - name: wordpress
   repository: oci://harbor.k3s0.ujstor.com/helm
-  version: 1.1.0
-digest: sha256:b0afeae7663b90db1abf1eef3f5a9a4b9bf3a87ff96ea6017330b563cc359695
-generated: "2025-02-23T11:50:06.800858698+01:00"
+  version: 1.2.0
+digest: sha256:a2900b93bf06076d7b3cec52271c18cc6d85706a0cf6dab1e762f5dc5fd05ad3
+generated: "2025-03-19T01:13:59.880095943+01:00"

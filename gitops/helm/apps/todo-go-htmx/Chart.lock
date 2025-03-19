@@ -1,6 +1,6 @@
 dependencies:
 - name: todo-go-htmx
   repository: oci://harbor.k3s0.ujstor.com/helm
-  version: 1.0.4
-digest: sha256:ef34e06242beb47fe2b1cf1c6bcfb94dc9bc184f40bd4e0ffd52f8b5a386e67f
-generated: "2025-02-12T02:33:24.497546773+01:00"
+  version: 1.1.0
+digest: sha256:81f6f3b64b945f73f51f3b236003ab045fbeffd1f5251eada952524a9d9ad55e
+generated: "2025-03-19T02:55:40.750736875+01:00"

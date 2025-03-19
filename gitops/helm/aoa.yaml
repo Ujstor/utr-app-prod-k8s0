@@ -3,8 +3,6 @@ kind: Application
 metadata:
   name: aoa-cluster-utr-app-prod-k8s0
   namespace: gitops
-  finalizers:
-    - resources-finalizer.argocd.argoproj.io
 spec:
   destination:
     namespace: gitops

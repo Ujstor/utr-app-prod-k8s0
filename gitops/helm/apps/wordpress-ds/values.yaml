@@ -10,11 +10,10 @@ wp-ds:
     ingress:
       enabled: true
       pathType: Prefix
-      ingressClassName: "nginx"
+      ingressClassName: "nginx-ds"
       hostname: dancingspoon.net
       path: /
       annotations:
-        cert-manager.io/cluster-issuer: "letsencrypt"
         nginx.ingress.kubernetes.io/backend-protocol: "HTTP"
         nginx.ingress.kubernetes.io/force-ssl-redirect: "true"
         nginx.ingress.kubernetes.io/ssl-redirect: "true"
@@ -24,7 +23,7 @@ wp-ds:
         nginx.ingress.kubernetes.io/client-body-buffer-size: "50m"
         nginx.ingress.kubernetes.io/proxy-buffering: "on"
         nginx.ingress.kubernetes.io/proxy-buffer-size: "8k"
-      tls: true
+      tls: false
 
     persistence:
       size: 5Gi
