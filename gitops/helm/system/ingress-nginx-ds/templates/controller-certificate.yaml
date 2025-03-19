@@ -8,7 +8,7 @@ spec:
   issuerRef:
     name: letsencrypt-nginx-controller-ds-issuer
     kind: Issuer
-  commonName: "*.dancingspoon.net"
+  commonName: "dancingspoon.net"
   dnsNames:
   - "*.dancingspoon.net"
   - "dancingspoon.net"

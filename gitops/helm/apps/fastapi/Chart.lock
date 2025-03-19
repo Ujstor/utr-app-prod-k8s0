@@ -1,6 +1,6 @@
 dependencies:
 - name: social-media-fastapi
   repository: oci://harbor.k3s0.ujstor.com/helm
-  version: 1.0.3
-digest: sha256:8caa701b83f840b228b6426ae3f5263d87707d8a9263045ab0b5db57602bcfd8
-generated: "2025-02-13T01:36:20.561030628+01:00"
+  version: 1.1.0
+digest: sha256:249c57fb17906cb02c0ca883140cd8b79c7e9eaeb0357d9f9b37562f735dba3b
+generated: "2025-03-19T02:55:40.854217429+01:00"

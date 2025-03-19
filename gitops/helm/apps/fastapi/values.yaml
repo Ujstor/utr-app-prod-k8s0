@@ -5,7 +5,3 @@ social-media-fastapi:
         paths:
           - path: /
             pathType: Prefix
-    tls:
-     - secretName: fastapi-prod-tls
-       hosts:
-         - fastapi.astipan.com

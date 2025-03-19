@@ -5,8 +5,3 @@ portfolio:
         paths:
           - path: /
             pathType: Prefix
-    tls:
-     - secretName: portfolio-prod-tls
-       hosts:
-         - astipan.com
-

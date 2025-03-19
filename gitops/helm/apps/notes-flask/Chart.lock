@@ -1,6 +1,6 @@
 dependencies:
 - name: notes-flask
   repository: oci://harbor.k3s0.ujstor.com/helm
-  version: 1.0.0
-digest: sha256:8f251330c983b7b6a4133eb081417f2f4a2a4f0a91d1c7fc009d24b2409e50ea
-generated: "2025-02-09T01:26:07.93451516+01:00"
+  version: 1.1.0
+digest: sha256:ce1bdf902736e588782f6fac6a19d788a13680eb086a47d2d6ea8793c3cc1e13
+generated: "2025-03-19T02:55:40.769698947+01:00"

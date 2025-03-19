@@ -1,0 +1,10 @@
+ingress-nginx:
+  nginx:
+    controller:
+      replicaCount: 1
+      extraArgs:
+        default-ssl-certificate: ingress-nginx/letsencrypt-secret-prod
+      ingressClassResource:
+        controllerValue: k8s.io/nginx-utr
+        enabled: true
+        name: nginx-utr

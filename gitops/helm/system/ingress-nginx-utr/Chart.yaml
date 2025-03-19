@@ -1,11 +1,11 @@
 apiVersion: v2
-name: notes-flask
-description: Ujstor's notes app with flask Helm chart for Kubernetes
+name: ingress-nginx
+description: Nginx Helm chart by Ujstor
 type: application
 version: 1.1.0
-appVersion: "1.1.0"
+appVersion: "1.12.0"
 
 dependencies:
-- name: notes-flask
+- name: ingress-nginx
   version: 1.1.0
   repository: "oci://harbor.k3s0.ujstor.com/helm"

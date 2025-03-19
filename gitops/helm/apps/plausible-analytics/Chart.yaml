@@ -2,11 +2,11 @@ apiVersion: v2
 name: plausible-analytics
 description: Plausible-analytics Helm chart configured by Ujstor
 type: application
-version: 1.0.0
+version: 1.1.0
 appVersion: "2.1.1"
 
 dependencies:
 - name: plausible-analytics
-  version: 1.0.0
+  version: 1.1.0
   repository: "oci://harbor.k3s0.ujstor.com/helm"
   alias: plausible

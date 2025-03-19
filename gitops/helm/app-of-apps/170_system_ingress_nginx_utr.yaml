@@ -1,0 +1,26 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: system-ingress-nginx-utr-utr-app-prod-k8s0
+  namespace: gitops
+  annotations:
+    argocd.argoproj.io/sync-wave: "4"
+    argocd.argoproj.io/hook-dependency: system-cilium
+spec:
+  destination:
+    namespace: ingress-nginx-utr
+    server: https://api.k3s1.ujstor.com:6443
+  project: ops-cluster-bootstrap
+  source:
+    path: gitops/helm/system/ingress-nginx-utr
+    repoURL: https://gitlab.k3s0.ujstor.com/clusters/customer-ujstor/utr-app-prod-k8s0.git
+    targetRevision: main
+    helm:
+      version: v3
+      releaseName: ingress-nginx-utr
+  syncPolicy:
+    automated:
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
+      - ServerSideApply=true

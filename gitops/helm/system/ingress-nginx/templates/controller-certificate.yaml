@@ -8,7 +8,7 @@ spec:
   issuerRef:
     name: letsencrypt-nginx-controller-issuer
     kind: Issuer
-  commonName: "*.astipan.com"
+  commonName: "astipan.com"
   dnsNames:
   - "*.astipan.com"
   - "astipan.com"

@@ -1,6 +1,6 @@
 dependencies:
 - name: plausible-analytics
   repository: oci://harbor.k3s0.ujstor.com/helm
-  version: 1.0.0
-digest: sha256:93acd669afe575e10cf76ef38c78428b416d3fbe5528e5df4fabcf1de51fa8d8
-generated: "2025-02-09T01:26:07.971592578+01:00"
+  version: 1.1.0
+digest: sha256:2aee978b59ce30aa94a8252869f7ce22c84482a79aa9831744db4abaf91c2111
+generated: "2025-03-19T02:55:40.826609135+01:00"

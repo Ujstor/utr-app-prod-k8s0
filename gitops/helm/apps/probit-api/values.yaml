@@ -5,7 +5,3 @@ probit-api:
         paths:
           - path: /
             pathType: Prefix
-    tls:
-     - secretName: probit-api-prod-tls
-       hosts:
-         - probit.astipan.com
