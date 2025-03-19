@@ -1,9 +1,9 @@
 dependencies:
 - name: prometheus-grafana
   repository: oci://harbor.k3s0.ujstor.com/helm
-  version: 1.0.0
+  version: 3.1.0
 - name: secret-store
   repository: oci://harbor.k3s0.ujstor.com/helm
   version: 1.0.0
-digest: sha256:556a40217e2a32cb59aff7762817a29cb77f8970fde2892fd5a935a0b66d38b7
-generated: "2025-02-09T01:26:08.007607706+01:00"
+digest: sha256:e000fa6730f7be0d9bb9f931f20db6e5f661804373edf5a127cdc0b731626ee5
+generated: "2025-03-19T01:13:59.885572844+01:00"

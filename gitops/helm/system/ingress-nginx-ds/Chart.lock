@@ -1,0 +1,6 @@
+dependencies:
+- name: ingress-nginx
+  repository: oci://harbor.k3s0.ujstor.com/helm
+  version: 1.1.0
+digest: sha256:a478a064401e1022df0876e3b28b01004aaccdd09a4df9df8f3a747cbdb3e387
+generated: "2025-03-19T01:13:59.889490925+01:00"

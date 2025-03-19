@@ -45,3 +45,4 @@ data/
 letsencrypt/
 
 terraform-cron.log
+secret.yaml

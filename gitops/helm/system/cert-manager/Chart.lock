@@ -1,6 +1,6 @@
 dependencies:
 - name: cert-manager
   repository: oci://harbor.k3s0.ujstor.com/helm
-  version: 1.0.0
-digest: sha256:68e787fd7a73ab2c5a39846c88cc4c0ab7121da268e6e18356677449ab5c3624
-generated: "2025-02-09T01:26:07.951855113+01:00"
+  version: 1.1.0
+digest: sha256:c5fd2c1595cbb64695df352e51357764db936fe8126c0a7044f626301b1210d3
+generated: "2025-03-19T01:13:59.834824141+01:00"

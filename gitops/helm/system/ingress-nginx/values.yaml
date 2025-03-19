@@ -1,4 +1,6 @@
 nginx:
   nginx:
     controller:
-      replicaCount: 2
+      replicaCount: 1
+      extraArgs:
+        default-ssl-certificate: ingress-nginx/letsencrypt-secret-prod

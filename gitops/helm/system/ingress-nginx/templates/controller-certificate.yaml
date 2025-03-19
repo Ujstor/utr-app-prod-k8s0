@@ -1,0 +1,19 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: nginx-controler-wildcard-cert
+  namespace: ingress-nginx
+spec:
+  secretName: letsencrypt-secret-prod
+  issuerRef:
+    name: letsencrypt-nginx-controller-issuer
+    kind: Issuer
+  commonName: "*.astipan.com"
+  dnsNames:
+  - "*.astipan.com"
+  - "astipan.com"
+  duration: 2160h # 90 days
+  renewBefore: 360h # 15 days
+  privateKey:
+    algorithm: RSA
+    size: 2048
