@@ -8,3 +8,6 @@ nginx:
         controllerValue: k8s.io/nginx-ds
         enabled: true
         name: nginx-ds
+      service:
+        externalTrafficPolicy: Local
+        loadBalancerIP: 49.13.159.158
