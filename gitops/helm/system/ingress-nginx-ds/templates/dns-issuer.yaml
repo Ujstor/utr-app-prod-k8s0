@@ -2,7 +2,7 @@ apiVersion: cert-manager.io/v1
 kind: Issuer
 metadata:
   name: letsencrypt-nginx-controller-ds-issuer
-  namespace: ingress-nginx-ns
+  namespace: ingress-nginx-ds
 spec:
   acme:
     privateKeySecretRef:

@@ -10,6 +10,7 @@ spec:
     kind: Issuer
   commonName: "ujstor.com"
   dnsNames:
+  - "ujstor.com"
   - "*.ujstor.com"
   - "*.k3s1.ujstor.com"
   - "*.console.k3s1.ujstor.com"
