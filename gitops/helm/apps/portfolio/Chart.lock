@@ -1,6 +1,6 @@
 dependencies:
 - name: portfolio
   repository: oci://harbor.k3s0.ujstor.com/helm
-  version: 1.0.0
-digest: sha256:1d9173dbbb3d6964eeb7f14a94a6349ee5a799ee6bd1feaea3e2603b832ea76c
-generated: "2025-02-09T01:26:07.945010923+01:00"
+  version: 1.1.0
+digest: sha256:bdf0ebdef33ac1df035205abfd1098c1224ac8eec6fceac58504175c8b1bb496
+generated: "2025-03-19T20:44:50.808286276+01:00"
