@@ -10,4 +10,4 @@ ingress-nginx:
         name: nginx-utr
       service:
         externalTrafficPolicy: Local
-        loadBalancerIP: 49.13.159.158
+        loadBalancerIP:

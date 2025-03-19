@@ -9,10 +9,16 @@ s3-storage:
           size: 50Gi
     ingress:
       api:
-        ingressClassName: "nginx-utr"
         enabled: true
+        tls: 
+          - secretName: minio-api-tls
+            hosts:
+              - s3.harbor.k3s1.ujstor.com
         host: s3.harbor.k3s1.ujstor.com
       console:
-        ingressClassName: "nginx-utr"
         enabled: true
+        tls: 
+          - secretName: minio-console-tls
+            hosts:
+              - s3.harbor.console.k3s1.ujstor.com
         host: s3.harbor.console.k3s1.ujstor.com

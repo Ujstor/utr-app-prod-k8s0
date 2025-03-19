@@ -14,9 +14,15 @@ s3-storage:
     ingress:
       api:
         enabled: true
-        ingressClassName: "nginx-utr"
+        tls: 
+          - secretName: minio-api-tls
+            hosts:
+              - s3.k3s1.ujstor.com
         host: s3.k3s1.ujstor.com
       console:
         enabled: true
-        ingressClassName: "nginx-utr"
+        tls: 
+          - secretName: minio-console-tls
+            hosts:
+              - s3.console.k3s1.ujstor.com
         host: s3.console.k3s1.ujstor.com
